@@ -6,7 +6,7 @@
 
 programa
 {
-	inclua biblioteca Util --> util
+	inclua biblioteca Util --> util
 	funcao inicio()
 	{
 		inteiro vetor[10]//vetor de 10 posições (p), cada posição é indicado por um número entre colchetes exemplo vetor[3] = 5, vetor[1] = 2
@@ -22,7 +22,7 @@ programa
 
 		para (inteiro p = 0; p < 10; p++)
 		{
-			escreva (vetor[p], " ")
+			escreva (vetor[p], ", ")
 		}
 
 		//vamos exibir os mesmos valores do vetor na ordem inversa
@@ -31,7 +31,7 @@ programa
 		
 		para (inteiro p = 9; p >= 0; p--)
 		{
-			escreva (vetor[p], " ")
+			escreva (vetor[p], ", ")
 		}	
 		
 		escreva ("\n")
@@ -42,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 793; 
+ * @POSICAO-CURSOR = 597; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
