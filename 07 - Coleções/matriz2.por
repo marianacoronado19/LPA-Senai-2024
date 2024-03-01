@@ -5,7 +5,7 @@ programa
 
 	funcao inicio()
 	{
-		real coordenadas [5][2]
+		real coordenadas [5][2] //Linhas (5) = {24.0, 15.0}, {13.2,-45.6}... Colunas (2) = 24.0 e 15.0
 
 		preencher (coordenadas)
 		exibir (coordenadas)
@@ -16,7 +16,7 @@ programa
 		{
 			para (inteiro j = 0; j < u.numero_colunas(coordenadas); j++){
 				se (j == 0){
-					coordenadas[i][j] = mat.arredondar (u.sorteia(-9000, 9000), 2)/100.0
+					coordenadas[i][j] = mat.arredondar (u.sorteia(-9000, 9000), 2)/100.0//2= arredondar
 				} senao {
 					coordenadas [i][j] = mat.arredondar(u.sorteia(-18000, 18000), 2)/100.0
 				}
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 354; 
+ * @POSICAO-CURSOR = 535; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
