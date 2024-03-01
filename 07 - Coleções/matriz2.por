@@ -1,6 +1,11 @@
+/*
+ * Algoritmo: Matriz v2
+ * @Mariana Coronado
+ * 01/03/2024
+*/
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	inclua biblioteca Matematica --> mat
 
 	funcao inicio()
@@ -31,15 +36,24 @@ programa
 		para (inteiro i = 0; i < u.numero_linhas(coordenadas); i++)
 		{
 			para (inteiro j = 0; j < u.numero_colunas(coordenadas); j++){
-				se ( coordenadas[i][j] >= 0.0 ){
-					escreva (" ", coordenadas[i][j], "\t\t")
-				}senao{
-				escreva (coordenadas[i][j], "\t\t")
+				
+				real coordenada = coordenadas[i][j]
+				
+				se ( coordenada >= 0.0 ){
+					escreva (" ")
 				}
+				se (coordenada < 10.0 e coordenada > -10.0){
+					escreva (" ")
+				}
+				se (coordenada < 100.0 e coordenada > -100.0){
+					escreva (" ")
+				} 	
+				escreva (coordenada, "\t\t")
+			
 			}
+		}
 			escreva ("\n")
 		}
-	}
 	
 }
 /* $$$ Portugol Studio $$$ 
@@ -47,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 945; 
+ * @POSICAO-CURSOR = 61; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
