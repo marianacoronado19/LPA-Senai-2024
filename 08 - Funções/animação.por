@@ -10,49 +10,18 @@ programa
 		para (inteiro coluna = coluna_inicial; coluna < coluna_final; coluna++){
 			para (inteiro andando = 0; andando <= 1; andando++){
 				limpa()
-				se (andando == 0){
-					/*inteiro brancos = 1
-					*inteiro quantidade = coluna * 3 + 14
-					*enquanto (brancos <= quantidade){
-					*{
-					*	escreva (" ")
-					*	brancos++
-					*}
-					}*/
+				se (andando == 0)
+				{
 					branco(coluna * 3 + 14)
 					escreva ("\\ /\n")
-					inteiro brancos = 1
-					inteiro quantidade = coluna * 3 
-					enquanto (brancos <= quantidade){
-						escreva (" ")
-						brancos++
-					}
+					branco(coluna*3)
 					escreva ("( )( )( )( )( 0.0 )")
-					}senao{
-						inteiro brancos = 1
-						inteiro quantidade = coluna * 3 + 7
-
-						enquanto (brancos <= quantidade)
-						{
-							escreva (" ")
-							brancos++
-						}
+				}senao{
+						branco(coluna * 3 + 7)
 						escreva("( )")
-						brancos = 3
-						quantidade = 4
-						enquanto (brancos <= quantidade)
-						{
-							escreva (" ")
-							brancos++
-						}
+						branco(4)
 						escreva("\\ /\n")
-						brancos = 1
-						quantidade = coluna * 3 + 2
-						enquanto (brancos <= quantidade)
-						{
-							escreva (" ")
-							brancos++
-						}
+						branco(coluna * 3 + 2)
 						escreva ("( )( ) ( )( 0.0 )")
 					}
 					
@@ -75,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 536; 
+ * @POSICAO-CURSOR = 547; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
